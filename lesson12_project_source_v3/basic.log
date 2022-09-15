@@ -1,0 +1,490 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:04:47] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:04:49] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:05:21] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:05:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:05:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:05:28] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:05:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:31] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:31] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:31] "[36mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:49] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:49] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:10:49] "[36mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 19, in search_page
+    logging.info('Выполняю поиск', encoding="utf-8")
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 2138, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:11:20] "[35m[1mGET /search/?s=as HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 19, in search_page
+    logging.info('Выполняю поиск', encoding="utf-8")
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 2138, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:11:22] "[35m[1mGET /search/?s=as HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 19, in search_page
+    logging.info('Выполняю поиск', encoding="utf-8")
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 2138, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:11:30] "[35m[1mGET /search/?s=красивый HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 19, in search_page
+    logging.info('Выполняю поиск', encoding="utf-8")
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 2138, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:11:47] "[35m[1mGET /search/?s=красивый HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 19, in search_page
+    logging.info('Выполняю поиск', encoding="utf-8")
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 2138, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:11:48] "[35m[1mGET /search/?s=красивый HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 19, in search_page
+    logging.info('Выполняю поиск', encoding="utf-8")
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 2138, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Program Files\Python3\lib\logging\__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:11:50] "[35m[1mGET /search/?s=красивый HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:35] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:38] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:13:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:36] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:36] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:36] "[36mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:48] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:53] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:57] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2022 19:14:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:36] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:39] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:42] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:44] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:51] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:16:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Загруженный файл не картинка
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:17:06] "POST /post HTTP/1.1" 200 -
+INFO:root:Загруженный файл не картинка
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:17:22] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:17:24] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:17:31] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:22:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:22:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:22:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Sep/2022 15:22:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:43:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:43:59] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:04] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:33] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:35] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:39] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:54] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:44:54] "GET /uploads/images/резюме.pdf.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:02] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:11] "GET /search/?s=йцу HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:11] "[36mGET /uploads/images/резюме.pdf.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:30] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:30] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:30] "[36mGET /uploads/images/резюме.pdf.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:45:30] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:21] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:35] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:35] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:35] "[36mGET /uploads/images/резюме.pdf.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:35] "[36mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:44] "GET /search/?s=очень HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 13:46:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:19:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:19:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 21, in search_page
+    posts = search_by_word(search_mas)
+  File "C:\HW_11\lesson12_project_source_v3\functions.py", line 12, in search_by_word
+    for post in load_posts():
+  File "C:\HW_11\lesson12_project_source_v3\functions.py", line 6, in load_posts
+    return json.load(f, ensure_ascii=False)
+  File "C:\Program Files\Python3\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Program Files\Python3\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+TypeError: JSONDecoder.__init__() got an unexpected keyword argument 'ensure_ascii'
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:19:20] "[35m[1mGET /search/?s=еда HTTP/1.1[0m" 500 -
+INFO:root:complete search
+ERROR:app:Exception on /search/ [GET]
+Traceback (most recent call last):
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\PycharmProjects\pythonProject3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\HW_11\lesson12_project_source_v3\main\views.py", line 21, in search_page
+    posts = search_by_word(search_mas)
+  File "C:\HW_11\lesson12_project_source_v3\functions.py", line 12, in search_by_word
+    for post in load_posts():
+  File "C:\HW_11\lesson12_project_source_v3\functions.py", line 6, in load_posts
+    return json.load(f, ensure_ascii=False)
+  File "C:\Program Files\Python3\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Program Files\Python3\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+TypeError: JSONDecoder.__init__() got an unexpected keyword argument 'ensure_ascii'
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:19:39] "[35m[1mGET /search/?s=красивый HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:19:52] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:19:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:20:01] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:20:06] "GET /post HTTP/1.1" 200 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:20:10] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:20:12] "GET /post HTTP/1.1" 200 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:20:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:20:55] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:22:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:22:14] "GET /search/?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:22:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:22:14] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:33] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:34] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:36] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:37] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:39] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:40] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:43] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:25:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:30:38] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:30:53] "GET /post HTTP/1.1" 200 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:37] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:38] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:43] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:49] "GET /search/?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:49] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:57] "GET /search/?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:57] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:57] "[33mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:31:57] "[33mGET /uploads/images/резюме.pdf.png HTTP/1.1[0m" 404 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:32:14] "GET /search/?s=лампочка HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:32:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 15:32:19] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 16:19:56] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 16:20:03] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 16:20:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:19:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:28] "GET /post HTTP/1.1" 200 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:29] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:56] "GET /search/?s=еда HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:56] "[33mGET /search/http,,,://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:20:58] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:21:09] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:21:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:21:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:21:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:21:16] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:21:21] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:33:38] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:34:45] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:12] "GET /search/?s=qwe HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:12] "[36mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:16] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:41:39] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:41:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:41:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:41:42] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:42:50] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:42:52] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:42:54] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:02] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:03] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:25] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:34] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:34] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:37] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:48] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:50] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:59] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:43:59] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:44:00] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:44:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:12] "GET /search/?s=2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:12] "[36mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:13] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:45:23] "[33mGET /search/post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:46:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:46:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:46:58] "GET /search/?s=2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:46:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:46:58] "[33mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:47:04] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:47:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:47:10] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:47:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:47:10] "[33mGET /uploads/images/фото%20профиля.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:07] "GET /search/?s=3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:07] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:08] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:upload file not picture
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:15] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:16] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:25] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:27] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:33] "GET /uploads/images/фото%20профиля.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:34] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:37] "GET /search/?s=красивый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:39] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:complete search
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:45] "GET /search/?s=tlf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:47] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2022 17:48:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
